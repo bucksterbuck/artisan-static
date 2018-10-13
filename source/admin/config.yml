@@ -18,3 +18,13 @@ collections:
       - {label: "Image Filename", name: "image", widget: "string", required: false}
       - {label: "Comments", name: "comments", widget: "boolean", default: true}
       - {label: "Body", name: "body", widget: "markdown"}
+  - name: "projects"
+    label: "Projects"
+    label_singular: "Project"
+    folder: "source/_projects"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Company Name", name: "title", widget: "string", default: "Company Name"}
+      - {label: "Image Filename", name: "image", widget: "string", required: true}
+      - {label: "Amount Collected", name: "amountCollected", widget: "string", required: true}
