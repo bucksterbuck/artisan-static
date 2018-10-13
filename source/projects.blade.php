@@ -1,12 +1,12 @@
 @extends('_layouts.master')
 
-@section('title', 'Posts')
+@section('title', 'Projects')
 
 @section('content')
-    <h1>Posts</h1>
+    <h1>Projects</h1>
 
     <ul>
-        @forelse ($project->sortBy('title') as $post)
+        @forelse ($projects->sortBy('title') as $post)
             <li>
                 <a href="{{ $post->getPath() }}">{{ $post->title }}</a>
                 <small>{{ date('M j, Y', $post->date) }}</small>

@@ -29,6 +29,10 @@ return [
             'comments' => true,
             'tags' => [],
         ],
+	    'projects' => [
+	    	'path' => 'posts/{filename}',
+		    'sort' => '-amountCollected'
+	    ],
         'tags' => [
             'path' => 'tags/{filename}',
             'extends' => '_layouts.tag',
