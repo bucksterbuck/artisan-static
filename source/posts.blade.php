@@ -9,6 +9,7 @@
         @forelse ($posts->sortBy('title') as $post)
             <li>
                 <a href="{{ $post->getPath() }}">{{ $post->title }}</a>
+                <h4>Amount Collected {{ $post->amountCollected }}</h4>
                 <small>{{ date('M j, Y', $post->date) }}</small>
             </li>
         @empty
